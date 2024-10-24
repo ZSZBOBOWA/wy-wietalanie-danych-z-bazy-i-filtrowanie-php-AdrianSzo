@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    <form method="POST" action="index.php">
+        Wpisz nazwisko: <input type="text" name="nazwisko">
+        <input type="submit" value="Filtruj">
+    </form>
         <?php
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "szkola";
+    $dbname = "szkola1";
 
     // Tworzenie połączenia
     $conn = mysqli_connect($servername, $username, $password, $dbname);
